@@ -10,6 +10,8 @@ spring:
       spec: maximumSize=500,expireAfterWrite=10m
 
 eureka:
+  environment: dev
+  datacenter: soundive-local
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${random.uuid}
