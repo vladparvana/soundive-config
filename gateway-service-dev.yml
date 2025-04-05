@@ -20,11 +20,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka/}
-  credentials:
-    username: ${EUREKA_USERNAME:admin}
-    password: ${EUREKA_PASSWORD:changeme123}
-
+      defaultZone: http://admin:changeme123@localhost:8761/eureka/
 
 management:
   endpoints:
@@ -34,6 +30,3 @@ management:
   endpoint:
     health:
       show-details: always
-
-
-
