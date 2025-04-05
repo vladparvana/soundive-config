@@ -17,7 +17,7 @@ eureka:
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${random.uuid}
-    prefer-ip-address: true
+    prefer-ip-address: false
     status-page-url-path: /actuator/health
   client:
     service-url:
