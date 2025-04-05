@@ -20,7 +20,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://admin:changeme123@localhost:8761/eureka/
+      defaultZone: ${EUREKA_SERVER_URI:http://localhost:8761/eureka/}
 
 management:
   endpoints:
