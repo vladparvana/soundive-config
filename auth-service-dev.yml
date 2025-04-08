@@ -25,7 +25,7 @@ management:
       show-details: always
 
 jwt:
-  secret: ${JWT_SECRET:super_secret_key}
+  secret: ${JWT_SECRET:M0c1suuRkDAJx2qLWuAfQre3tXyzopQ8 }
   expiration: 86400000
 
 rabbitmq:
