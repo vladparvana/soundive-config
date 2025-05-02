@@ -41,3 +41,12 @@ rabbitmq:
     queue: user.queue
     created:
       routing-key: user.created
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      userService:
+        registerHealthIndicator: true
+        slidingWindowSize: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
