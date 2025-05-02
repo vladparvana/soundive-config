@@ -30,6 +30,9 @@ management:
   endpoint:
     health:
       show-details: always
+  metrics:
+    enable:
+      resilience4j.circuitbreaker: true
 
 jwt:
   secret: ${JWT_SECRET:M0c1suuRkDAJx2qLWuAfQre3tXyzopQ8 }
