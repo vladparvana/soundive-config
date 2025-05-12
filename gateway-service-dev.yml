@@ -33,7 +33,6 @@ spring:
           predicates:
             - Path=/users/**
           filters:
-            - StripPrefix=1
             - name: RequestRateLimiter
               args:
                 redis-rate-limiter.replenishRate: 5
